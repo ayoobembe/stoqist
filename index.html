@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		
+		<title>The Stoqist</title>
 	</head>
 
-	<body>
+	<body ng-app="Stoqist" ng-controller='searchController'>
 
+		<input type='text' ng-model="stockName" placeholder="Search stock"/>{{stockName}}
+
+		<input type='submit' ng-click="sayHello()"/>
+		{{declareIt}}
+
+
+
+
+
+		<script src="bower_components/angular/angular.js"></script>
+	  <script src="bower_components/angular-route/angular-route.js"></script>
+	  <script src="js/app.js"></script>
+	  <script src="js/services.js"></script>
+	  <script src="js/controllers.js"></script>
 	</body>
 </html>
