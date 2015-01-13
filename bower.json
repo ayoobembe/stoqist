@@ -1,0 +1,26 @@
+{
+  "name": "stoqist",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ayoobembe/stoqist",
+  "authors": [
+    "danielobembe <ayo.obembe@gmail.com>"
+  ],
+  "description": "An app that displays stock data as charts, and stock news feeds.",
+  "keywords": [
+    "stocks",
+    "prices",
+    "news",
+    "information",
+    "d3",
+    "angular",
+    "data"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
