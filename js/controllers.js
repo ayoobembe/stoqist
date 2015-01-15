@@ -1,12 +1,16 @@
 angular.module('Stoqist.controllers',[])
 
-	.controller('searchController', function($scope) {
+
+	.controller('searchController', function($scope, markitAPIservice) {
 		$scope.stockName = null;
-		$scope.declareIt = null;
+		$scope.matchingStocks = null;
 
-		$scope.sayHello = function(){
-			$scope.declareIt = 'Hello, World!';
-		};
-
+		$scope.setStock = function(){
+			$scope.matchingStocks = $scope.stockName;
+			markitAPIservice.lookupTickers($scope.matchingStocks)
+				.success(function(response){
+					console.log(response);
+			}
+		)};
 
 	});

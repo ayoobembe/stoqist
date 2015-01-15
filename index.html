@@ -7,9 +7,8 @@
 	<body ng-app="Stoqist" ng-controller='searchController'>
 
 		<input type='text' ng-model="stockName" placeholder="Search stock"/>{{stockName}}
-
-		<input type='submit' ng-click="sayHello()"/>
-		{{declareIt}}
+		<input type='submit' ng-click="setStock()"/>
+		{{matchingStocks}}
 
 
 
